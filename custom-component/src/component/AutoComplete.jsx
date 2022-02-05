@@ -1,17 +1,32 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Header from "./common/Header"
 
+const data = ["antique", "vintage", "중고A급", "rustic", "refurbished"]
+
 const AutoComplete = () => {
+  const [results, setResults] = useState([])
+  const [text, setText] = useState("")
+
+  const searchWord = (word) => {
+    setText(word)
+    if (word === "") {
+      setResults([])
+      return
+    }
+    setResults(data.filter((el) => el.includes(word) || el.includes(word.toUpperCase())))
+  }
+
   return (
     <>
       <Header title="AutoComplete" />
       <Container>
-        <SearchContainer>
-          <input type="text" />
-          <button>✖</button>
-          <Result>refurbished</Result>
-          <Result>refurbished</Result>
+        <SearchContainer noResults={!results.length}>
+          <input type="text" onChange={(e) => searchWord(e.target.value)} value={text} />
+          <button onClick={() => setText("")}>✖</button>
+          {results.map((result) => (
+            <Result key={result}>{result}</Result>
+          ))}
         </SearchContainer>
       </Container>
     </>
@@ -40,8 +55,7 @@ const SearchContainer = styled.div`
     padding: 8px 10px;
     font-size: 18px;
     border: none;
-    /* 결과 아무것도 없으면 border 없애기 */
-    border-bottom: 1px solid #c4c4c4;
+    border-bottom: ${(props) => (props.noResults ? "none" : "1px solid #c4c4c4")};
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -68,7 +82,7 @@ const SearchContainer = styled.div`
 const Result = styled.div`
   padding: 0 10px;
   background-color: white;
-  transition: all 0.3s ease-in;
+  transition: background 0.3s ease-in;
   &:hover {
     background-color: #e4e4e4;
   }
