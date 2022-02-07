@@ -10,11 +10,7 @@ const Header = ({ title }) => {
 }
 
 const HeaderContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 5px 20px;
   h2 {
     margin: 0;
     text-align: left;
