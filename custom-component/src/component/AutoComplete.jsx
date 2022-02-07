@@ -24,14 +24,25 @@ const AutoComplete = () => {
     setResults(data.filter((el) => el.includes(word) || el.includes(word.toUpperCase())))
   }
 
+  // 클릭 시 해당 단어 input value로 set
+  const setFoundWord = (word) => setText(word)
+
+  // input 비우기 및 검색 결과 목록 지우기
+  const clearInput = () => {
+    setText("")
+    setResults([])
+  }
+
   return (
     <Container>
       <Header title="AutoComplete" />
       <SearchContainer noResults={!results.length}>
         <input type="text" onChange={(e) => searchWord(e.target.value)} value={text} />
-        <button onClick={() => setText("")}>✖</button>
+        <button onClick={clearInput}>✖</button>
         {results.map((result) => (
-          <Result key={result}>{result}</Result>
+          <Result key={result} onClick={() => setFoundWord(result)}>
+            {result}
+          </Result>
         ))}
       </SearchContainer>
     </Container>
