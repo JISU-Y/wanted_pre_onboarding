@@ -1,6 +1,10 @@
 # 원티드 프리온보딩 코스
 원티드 프리온보딩 프론트엔드 코스 제출용 과제입니다.
 
+## DEMO
+
+[link] https://thirsty-kowalevski-0f10b8.netlify.app/
+
 ## ⚒️ 기술 스택
 - Javascript(ES6+)
 - styled-componetns
@@ -32,6 +36,7 @@
     Wrap안에 p의 after의 content에는 OFF, before에는 ON이 되도록 설정하여 state 사용없이 Toggle을 구현할 수 있었습니다.
 
 - 자세한 실행 방법
+
 ![1  Toggle](https://user-images.githubusercontent.com/80020227/152763537-795cab62-9cd9-4e8b-9cdd-3ef7da3bf5f7.gif)
 
 ### 2. Modal
@@ -47,6 +52,7 @@
     처음 Modal을 position absolute로 지정하였으나 App에 모든 컴포넌트를 보여주도록 설정했기 때문에 fixed로 변경하여 나타냈습니다.
 
 - 자세한 실행 방법
+
 ![2  Modal](https://user-images.githubusercontent.com/80020227/152772058-ee081479-2cd2-4bb5-9fe0-2364a1e05494.gif)
 
 ### 3. Tab
@@ -64,6 +70,7 @@
     그래서 useEffect를 이용하여 currentMenu가 바뀔 때마다 span안에 해당하는 요소를 담아서 currentContent에 set 해주고, 그 currentContent를 render 요소에 넣어주어 가독성을 높였습니다.
 
 - 자세한 실행 방법
+
 ![3  Tab](https://user-images.githubusercontent.com/80020227/152773237-02709aba-c55e-435d-859c-6117cfb1fde7.gif)
 
 ### 4. Tag
@@ -85,6 +92,7 @@
     따라서 tag 생성 시 value에는 input의 내용, id는 nanoid를 생성하여 unique한 id를 구현했고, 안전하게 요소를 관리할 수 있도록 했습니다.
 
 - 자세한 실행 방법
+
 ![4  Tag](https://user-images.githubusercontent.com/80020227/152774277-5bdd3139-dc6f-4e26-b3d9-75fd0e6de35c.gif)
 
 ### 5. AutoComplete
@@ -102,7 +110,8 @@
     따라서, onChange 함수에서 찾는 단어가 빈 문자열 일 경우는 결과 state를 빈 배열로 초기화하고 early return 하도록 구현하여 해결했습니다.
 
 - 자세한 실행 방법
-![5  AutoComplete](https://user-images.githubusercontent.com/80020227/152775323-ba0901f1-5bd1-458c-a9f9-7ff01656d253.gif)
+
+![5  AutoComplete](https://user-images.githubusercontent.com/80020227/152808743-1f442f5e-9652-414b-b8d1-9dda274b2431.gif)
 
 ### 6. ClictToEdit
 
@@ -127,4 +136,5 @@
     이 때 isEditing을 false로 하고, input에 입력되었던 값들을 결과 state에 담아주어 구현했습니다.
 
 - 자세한 실행 방법
+
 ![6  ClickToEdit](https://user-images.githubusercontent.com/80020227/152780799-75716264-5677-4c41-839c-351d06f81aa3.gif)
