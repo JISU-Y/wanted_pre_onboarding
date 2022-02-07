@@ -32,7 +32,7 @@
 
     이는 즉, 결국에 state를 사용해야 구현이 가능해졌습니다.
 
-    따라서, div, label, div를 따로 생성하지 않고, label 하나만 두고, label의 after는 흰색 버튼을 나타내도록 하고, before에는 backround(색)으로 두고
+    따라서, div, label, div를 따로 생성하지 않고, label은 흰색 버튼을 나타내도록 하고, label을 감싸는 div는 Switch Rail 및 backround(색)으로 두고
     Wrap안에 p의 after의 content에는 OFF, before에는 ON이 되도록 설정하여 state 사용없이 Toggle을 구현할 수 있었습니다.
 
 - 자세한 실행 방법
