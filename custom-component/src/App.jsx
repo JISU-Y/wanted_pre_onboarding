@@ -5,18 +5,25 @@ import Tab from "./component/Tab"
 import Tag from "./component/Tag"
 import AutoComplete from "./component/AutoComplete"
 import ClickToEdit from "./component/ClickToEdit"
+import styled from "styled-components"
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <Toggle />
       <Modal />
       <Tab />
       <Tag />
       <AutoComplete />
       <ClickToEdit />
-    </div>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+`
 
 export default App
