@@ -27,22 +27,20 @@ const Tab = () => {
   }, [currentMenu])
 
   return (
-    <>
+    <Container>
       <Header title="Tab" />
-      <Container>
-        <TabContainer>
-          <TabWrap>
-            <Holder />
-            {menu.map((el, index) => (
-              <Menu key={el} onClick={() => handleClick(index)} isActive={currentMenu === index}>
-                {el}
-              </Menu>
-            ))}
-          </TabWrap>
-          <ContentsWrap>{currentContent}</ContentsWrap>
-        </TabContainer>
-      </Container>
-    </>
+      <TabContainer>
+        <TabWrap>
+          <Holder />
+          {menu.map((el, index) => (
+            <Menu key={el} onClick={() => handleClick(index)} isActive={currentMenu === index}>
+              {el}
+            </Menu>
+          ))}
+        </TabWrap>
+        <ContentsWrap>{currentContent}</ContentsWrap>
+      </TabContainer>
+    </Container>
   )
 }
 

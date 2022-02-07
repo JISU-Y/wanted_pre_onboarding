@@ -11,6 +11,7 @@ const Header = ({ title }) => {
 
 const HeaderContainer = styled.div`
   width: 100%;
+  margin-bottom: 20px;
   h2 {
     margin: 0;
     text-align: left;
