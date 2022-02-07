@@ -8,7 +8,7 @@
 
 ## 💻 구현 결과
 
-1. Toggle
+### 1. Toggle
 
 - 구현한 방법과 이유
 
@@ -34,7 +34,7 @@
 - 자세한 실행 방법
 ![1  Toggle](https://user-images.githubusercontent.com/80020227/152763537-795cab62-9cd9-4e8b-9cdd-3ef7da3bf5f7.gif)
 
-2. Modal
+### 2. Modal
 
 - 구현한 방법과 이유
 
@@ -49,7 +49,7 @@
 - 자세한 실행 방법
 ![2  Modal](https://user-images.githubusercontent.com/80020227/152772058-ee081479-2cd2-4bb5-9fe0-2364a1e05494.gif)
 
-3. Tab
+### 3. Tab
 
 - 구현한 방법과 이유
 
@@ -66,7 +66,7 @@
 - 자세한 실행 방법
 ![3  Tab](https://user-images.githubusercontent.com/80020227/152773237-02709aba-c55e-435d-859c-6117cfb1fde7.gif)
 
-4. Tag
+### 4. Tag
 
 - 구현한 방법과 이유
 
@@ -87,7 +87,7 @@
 - 자세한 실행 방법
 ![4  Tag](https://user-images.githubusercontent.com/80020227/152774277-5bdd3139-dc6f-4e26-b3d9-75fd0e6de35c.gif)
 
-5. AutoComplete
+### 5. AutoComplete
 
 - 구현한 방법과 이유
 
@@ -104,7 +104,7 @@
 - 자세한 실행 방법
 ![5  AutoComplete](https://user-images.githubusercontent.com/80020227/152775323-ba0901f1-5bd1-458c-a9f9-7ff01656d253.gif)
 
-6. ClictToEdit
+### 6. ClictToEdit
 
 - 구현한 방법과 이유
 
