@@ -85,6 +85,7 @@ const TagContent = styled.div`
   padding: 8px 10px;
   margin-right: 10px;
   font-size: 16px;
+  min-width: fit-content;
   button {
     width: 18px;
     height: 18px;
